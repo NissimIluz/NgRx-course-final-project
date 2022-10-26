@@ -17,7 +17,7 @@ import { environment } from '../environments/environment';
     return (state,action) => {
         console.log("state before: ", state);
         console.log("action", action);
-        return reducers(action, state);
+        return reducers(state,action);
     }
   }
   
